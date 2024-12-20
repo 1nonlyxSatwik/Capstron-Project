@@ -1,0 +1,660 @@
+ @import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=DotGothic16&display=swap');
+
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Archivo", serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+button{
+    cursor: pointer;
+}
+
+.page1 {
+    height: auto;
+    width: 100%;
+}
+
+.header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    background-color: #2419F30F;
+    padding: 1.2vw 1.6vw;
+    width: 85%;
+    position: relative;
+    left: 50%;
+    margin-top: 2vw;
+    transform: translateX(-50%);
+    border-radius: 0.8vw;
+    /* margin: 1.5vw 12.5vw; */ 
+}
+
+.part1 {
+    display: flex;
+    gap: 2vw;
+    font-size: 1.3vw;
+}
+
+.part2 p {
+    font-size: 1.8vw;
+    font-family: "DotGothic16", serif;
+}
+.header p:hover{
+    background-color: #d5c5fe;
+    padding: 0 0.2vw;
+   
+}
+.content {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, white 20%, #2419F30F 100%);
+
+}
+
+.content h1 {
+    font-weight: 400;
+    line-height: 7vw;
+    text-align: center;
+    width: 80%;
+    font-size: 7vw;
+    font-family: "DotGothic16", serif;
+    margin-top: 6vw;
+}
+
+.content img {
+    position: relative;
+    margin-top: -2vw;
+    height: 80vh;
+    width: 70%;
+}
+
+.page2 {
+    height: fit-content;
+    width: 100%;
+    padding: 3vw;
+}
+
+.page2 .top h1 {
+    margin-top: 9vw;
+    font-size: 4vw;
+    font-family: "DotGothic16", serif;
+    width: 60%;
+}
+
+.page2 img {
+    margin-top: 5vw;
+    width: 100%;
+    height: auto;
+}
+
+.page3 {
+    /* height: fit-content; */
+    padding: 3vw;
+    display: flex;
+
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to bottom, #FFFFFFB2 70%, #2419F30B 100%);
+
+
+}
+
+.page3 .left {
+    width: 50%;
+}
+
+.page3 .left h1 {
+    margin-top: 12vw;
+    font-size: 4vw;
+    font-family: "DotGothic16", serif;
+    font-weight: 400;
+}
+
+.page3 .left p {
+    font-size: 1.6vw;
+    font-family: "Archivo", serif;
+    line-height: 2vw;
+}
+
+.page3 .left button {
+    margin-top: 2vw;
+    border: none;
+    background: #2419F3;
+    color: white;
+    border-radius: 0.5vw;
+    padding: 0.8vw 1.6vw;
+    font-size: 1.4vw;
+    transition: background 0.8 ease-in;
+}
+.page3 .left button:hover { 
+    background: #443bfb;
+     
+}
+
+
+.page3 .right {
+    height: 100%;
+    width: 50%;
+}
+
+.page3 .right img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.grid {
+    padding-top: 2.22vw;
+    padding: 3vw;
+    columns: 3;
+    column-gap: 0.8vw;
+}
+
+#grid-item {
+    display: inline-block;
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 1.1vw;
+}
+
+.grid div img {
+    width: 28.88vw;
+}
+
+.grid div .p1 {
+    font-family: Archivo;
+    font-size: 1.38vw;
+    font-weight: 400;
+    line-height: 1.2vw;
+    padding-bottom: 0.5vw;
+}
+
+.grid div .p2 {
+    font-family: Archivo;
+    font-size: 1.18vw;
+    font-weight: 200;
+    line-height: 1.2vw;
+    padding-bottom: 2vw;
+}
+.page5{
+    position: relative;
+}
+
+.page5 h1{
+  position: absolute;
+  right: 2vw;
+     width: 45%;
+     font-size: 1.6vw;
+     font-weight: 400;
+     font-family: Archivo;
+    
+}
+ 
+.page6 {
+    margin-top: 8vw;
+    height: 60vh;
+    width: 100%;
+}
+
+.page6 h2 {
+    font-size: 3.1vw;
+    font-family: "DotGothic16", serif;
+    font-weight: 400;
+    letter-spacing: -0.01vw;
+    text-align: center;
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+}
+.review {
+    padding: 0 2.8vw;
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    overflow-x: hidden;
+    gap: 2.3vw;
+    overflow-x: scroll;
+    justify-content: space-between;
+}
+.review::-webkit-scrollbar {
+    display: none;  
+}
+.client {
+    height: 11vw;
+    width: calc(24% - 1.15vw); 
+    border: 1px solid #000000;
+    border-radius: 1.5vw;
+    padding: 1.6vw; 
+    flex-shrink: 0;
+    flex-grow: 0;
+    transition: scale 0.4s ease-in; 
+}
+ 
+.user-detail {
+    display: flex;
+    gap: 1vw;
+    align-items: center;
+}
+
+.user-detail img {
+    border-radius: 50%;
+    height: 3vw;
+    object-fit: cover;
+}
+
+.user-name {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-name h5 {
+    font-size: 1vw;
+    line-height: 1.6vw;
+    letter-spacing: 0.5%;
+    font-weight: 700; 
+    color: #000000;
+    font-family: "Archivo", serif;
+}
+
+.user-name p {
+    font-family: "Archivo", serif;
+    font-size: 1vw; 
+    letter-spacing: 0.5%;
+    font-weight: 400; 
+    color: #000000;
+    padding-bottom: 1vw;
+}
+
+ 
+
+#experience {
+    margin-left: 1.6vw;
+    margin-top: 1.5vw;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    padding-left: 2vw;
+    border-left: 1px solid #000000;
+    /* font-size: 20px; */
+    font-size: 1.5vw;
+    color: #1D251D;
+} 
+.sp{
+    height: 13vw;
+}
+
+.join{
+    height: 80vh;
+    width: 100%;
+    background: linear-gradient(to bottom, #FFFFFFB2 70%, #2419F30B 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.join h1{
+    font-size: 4vw;
+    font-weight: 400;
+    font-family: "DotGothic16", serif;
+}
+
+.join p{
+    padding-top: 2vw;
+    font-size: 1.5vw;
+    font-weight: 400;
+    font-family: "Archivo", serif;
+}
+.join button{
+    margin-top: 3vw;
+    background-color: #2419F3;
+    color: white;
+    padding: 1vw 1.5vw;
+    font-size: 1.4vw;
+    border: none;
+    border-radius: .8vw;
+    transition: background-color 0.6s ease-in;
+}
+ 
+#sub:hover{
+    background-color: #4b42fd;
+}
+footer{
+    padding: 6vw 3vw 4vw 3vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer h3{
+    font-size: 1.8vw;
+    font-weight: 400;
+    font-family: "DotGothic16", serif;
+}
+
+footer button{
+    background-color: transparent;
+    border: 1px solid black;
+    padding: 0.8vw 1.1vw;
+    font-size: 1.4vw;
+    border-radius: 0.6vw;
+    transition: background 0.8s ease;
+}
+footer button:hover{
+    background: #2419F3;
+    color: white;
+}
+
+
+
+
+
+
+
+ 
+
+
+
+
+@media (max-width: 780px){
+    .page3 {
+        /* height: fit-content; */
+        padding: 3vw;
+        display: flex;
+    
+        height: 50vh;
+        width: 100%;
+        
+    
+    }
+}
+
+ @media (min-width: 980px) {
+    .page3 { 
+        padding: 3vw;
+        display: flex;
+    
+        height: 70vh;
+         
+    }
+
+    
+    .page3 .left button {
+         
+        font-size: 2.1vw;
+    }
+    
+    .page3 .right {
+        height: 100%;
+        width: 65%;
+    }
+     .grid {
+        padding-top: 2.22vw;
+        columns: 2;
+        column-gap: 3vw;
+    }
+
+     .grid div img { 
+        width: 100%;
+        border-radius: 3.88vw;
+    }
+
+    .grid div .p1 { 
+        font-family: Archivo;
+        font-size: 2.5vw;
+        font-weight: 500;
+        line-height: 3vw;
+    }
+
+    .grid div .p2 {
+        font-family: Archivo;
+        font-size: 2vw;
+        font-weight: 200;
+        line-height: 2vw;
+    }
+    .join{
+        height: 80vh; }
+
+
+@media (max-width: 480px) {
+
+ 
+
+.header {
+    margin-top: 2vw;
+    width: 80%;
+    border-radius: 1vw;
+    padding: 1vw 2vw;
+}
+
+.part1 p{
+    font-size: 2vw;
+}
+
+
+.part2 p {
+    font-size: 2.8vw;
+    font-family: "DotGothic16", serif;
+}
+.contact p{
+    font-size: 2vw;
+}
+
+ 
+
+.content h1 { 
+    margin-top: 10vw;
+}
+
+.content img { 
+    height:45vh;
+    width: 80%;
+}
+
+.page2 {
+    height: fit-content;
+    width: 100%;
+    padding: 3vw;
+}
+ 
+
+.page2 img {
+    margin-top: 5vw;
+    width: 100%;
+    height: auto;
+}
+
+.page3 {
+    /* height: fit-content; */
+    padding: 3vw;
+    display: flex;
+
+    height: 40vh;
+    width: 100%;
+    background: linear-gradient(to bottom, #FFFFFFB2 70%, #2419F30B 100%);
+
+
+}
+
+.page3 .left {
+    margin-top: 8vw;
+    width: 35%;
+}
+
+.page3 .left h1 {
+    margin-top: 12vw;
+    font-size: 6vw;
+    font-family: "DotGothic16", serif;
+    font-weight: 400;
+    margin-bottom: 1vw;
+}
+
+.page3 .left p {
+    font-size: 2.2vw;
+   
+    font-family: "Archivo", serif;
+    line-height: 2.8vw;
+}
+
+.page3 .left button {
+     
+    font-size: 2.1vw;
+}
+
+.page3 .right {
+    height: 100%;
+    width: 65%;
+}
+
+.page3 .right img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+ 
+.page5{
+    position: relative;
+    margin-top: 5vw;
+}
+
+.page5 h1{
+  position: absolute;
+  right: 2vw;
+     width: 60%;
+     font-size: 2.6vw;
+     font-weight: 400;
+     font-family: Archivo;
+    
+}
+ 
+.page6 {
+    margin-top: 22vw;
+    height: 20vh;
+    width: 100%;
+}
+
+ 
+.review {
+    padding: 0 2.8vw;
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    overflow-x: hidden;
+    gap: 2.3vw;
+    overflow-x: scroll;
+    justify-content: space-between;
+}
+.review::-webkit-scrollbar {
+    display: none;  
+}
+.client {
+    margin-top: 4vw;
+    height: 16vw;
+    width: 40%; 
+  
+}
+ 
+.user-detail {
+    display: flex;
+    gap: 1vw;
+    align-items: center;
+}
+
+.user-detail img { 
+    height: 6vw; 
+}
+ 
+
+.user-name h5 {
+    margin-top: 2vw;
+    padding-bottom: 0.5vw;
+    font-size: 2vw;
+     
+}
+
+.user-name p {
+    font-family: "Archivo", serif;
+    font-size: 1.7vw; 
+     
+}
+
+ 
+
+#experience { 
+    /* font-size: 20px; */
+    font-size: 2.5vw; }
+.sp{
+    height: 19vw;
+}
+
+.join{
+    height: 30vh; }
+.join h1{
+    font-size: 6.8vw; 
+}
+
+.join p{
+    padding-top: 2vw;
+    font-size: 2.5vw; 
+}
+.join button{
+    margin-top: 3vw;
+    background-color: #2419F3;
+    color: white;
+    padding: 1vw 1.5vw;
+    font-size: 2.4vw;
+    border: none;
+    border-radius: .8vw;
+}
+ 
+footer h3{
+    font-size: 2.8vw;
+    font-weight: 400;
+    font-family: "DotGothic16", serif;
+}
+
+footer button{
+    background-color: transparent;
+    border: 1px solid black;
+    padding: 0.8vw 1.1vw;
+    font-size: 2.4vw;
+    border-radius: 0.6vw;
+    transition: background 0.8s ease;
+}
+footer button:hover{
+    background: #2419F3;
+    color: white;
+}
+
+    .grid {
+        padding-top: 2.22vw;
+        columns: 1;
+        column-gap: 2.22vw;
+    }
+
+    .grid div img {
+        width: 100%;
+        border-radius: 3.88vw;
+    }
+
+    .grid div .p1 {
+        font-family: Archivo;
+        font-size: 3.8vw;
+        font-weight: 500;
+        line-height: 4vw;
+    }
+
+    .grid div .p2 {
+        font-family: Archivo;
+        font-size: 2.7vw;
+        font-weight: 200;
+        line-height: 2.7vw;
+    }
